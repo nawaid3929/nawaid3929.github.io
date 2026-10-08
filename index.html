@@ -3,146 +3,173 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nawaidur Rahman · SharePoint Developer</title>
-<meta name="description" content="Nawaidur Rahman — SharePoint and Microsoft 365 developer building intranets, document management systems and Power Platform automation.">
+<title>Nawaidur Rahman | Senior SharePoint Developer &amp; Project Lead</title>
+<meta name="description" content="Nawaidur Rahman, Senior SharePoint Developer and Project Lead with 8+ years delivering SharePoint Online, SPFx, Microsoft 365 and Power Platform solutions for 30+ enterprise clients in India and the Gulf.">
+<meta property="og:title" content="Nawaidur Rahman | Senior SharePoint Developer & Project Lead">
+<meta property="og:description" content="8+ years building enterprise intranets, document management systems and Power Platform apps for clients across India, the UAE and Kuwait.">
+<meta property="og:image" content="https://nawaid3929.github.io/nawaidur.jpg">
+<link rel="icon" href="nawaidur.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#F7F9FA; --surface:#FFFFFF; --ink:#16202B; --muted:#5A6573;
-  --line:#DCE3E8; --teal:#0B7A75; --teal-soft:#E3F1F0; --amber:#D98B1F;
-  --radius-lg:20px; --radius-sm:8px;
+  --line:#DCE3E8; --teal:#0B7A75; --teal-soft:#E3F1F0; --amber:#D98B1F; --amber-soft:#FBF0DF;
+  --radius-lg:20px; --radius-sm:10px;
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
+  :root{
     --paper:#0F161D; --surface:#16202A; --ink:#E8EEF2; --muted:#9AA7B4;
-    --line:#26333F; --teal:#3FB8B0; --teal-soft:#16302F; --amber:#F0A940;
+    --line:#26333F; --teal:#3FB8B0; --teal-soft:#16302F; --amber:#F0A940; --amber-soft:#33281A;
   }
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
-h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.1;margin:0}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque",sans-serif;line-height:1.15;margin:0}
 a{color:inherit}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
 
 /* nav */
 header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{font:700 18px "Bricolage Grotesque",sans-serif;text-decoration:none}
 .brand span{color:var(--teal)}
-.links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.links{display:flex;gap:26px;list-style:none;margin:0;padding:0}
 .links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px}
 .links a:hover{color:var(--ink)}
-.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:var(--radius-sm);padding:8px 12px;color:var(--ink);font:inherit;cursor:pointer}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--ink);font:inherit;cursor:pointer}
 
 /* hero */
-.hero{padding:88px 0 72px;display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:center}
-.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--muted);margin-bottom:22px}
+.hero{padding:80px 0 64px;display:grid;grid-template-columns:1.45fr 1fr;gap:56px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;background:var(--amber-soft);color:var(--ink);padding:7px 14px;border-radius:999px;margin-bottom:24px}
 .status i{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px color-mix(in srgb,var(--amber) 25%,transparent)}
-.hero h1{font-size:clamp(44px,7vw,84px);font-weight:800;letter-spacing:-.03em}
-.hero p.lead{font-size:20px;color:var(--muted);max-width:34em;margin:22px 0 32px}
+.hero h1{font-size:clamp(44px,7vw,82px);font-weight:800;letter-spacing:-.03em}
+.hero .role{font:600 clamp(20px,2.4vw,26px)/1.3 "Bricolage Grotesque",sans-serif;color:var(--teal);margin-top:14px}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:33em;margin:18px 0 30px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px;border:1px solid transparent}
 .btn.primary{background:var(--teal);color:#fff}
 .btn.primary:hover{filter:brightness(1.08)}
-.btn.ghost{border:1px solid var(--line);background:var(--surface)}
+.btn.ghost{border-color:var(--line);background:var(--surface)}
 .btn.ghost:hover{border-color:var(--teal)}
 .portrait{position:relative;justify-self:center}
-.portrait img{width:min(340px,80vw);aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius-lg);display:block;background:var(--teal-soft)}
-.portrait .tag{position:absolute;left:-24px;bottom:28px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:14px;box-shadow:0 12px 30px -12px rgba(0,0,0,.25)}
-.portrait .tag b{display:block;font:800 26px "Bricolage Grotesque",sans-serif;color:var(--teal)}
+.portrait img{width:min(360px,82vw);aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:var(--radius-lg);display:block;background:var(--teal-soft)}
+.portrait .tag{position:absolute;left:-28px;bottom:30px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:14px;line-height:1.35;box-shadow:0 14px 34px -14px rgba(0,0,0,.3)}
+.portrait .tag b{display:block;font:800 18px "Bricolage Grotesque",sans-serif;color:var(--teal)}
 
-.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .facts div{padding:26px 0}
-.facts div+div{border-left:1px solid var(--line);padding-left:28px}
+.facts div+div{border-left:1px solid var(--line);padding-left:26px}
 .facts b{font:800 36px "Bricolage Grotesque",sans-serif;display:block}
 .facts span{color:var(--muted);font-size:15px}
 
-section{padding:88px 0}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
-.sec-head h2{font-size:clamp(32px,4.5vw,48px);font-weight:700;letter-spacing:-.02em}
-.sec-head p{color:var(--muted);max-width:30em;margin:0}
+section{padding:88px 0 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(30px,4.4vw,46px);font-weight:700;letter-spacing:-.02em}
+.sec-head p{color:var(--muted);max-width:32em;margin:0}
 
-/* about */
-.about{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-.about p{margin:0 0 16px;color:var(--muted)}
-.about p:first-child{font-size:21px;color:var(--ink);line-height:1.5}
+/* summary */
+.summary{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.summary p{margin:0 0 16px;color:var(--muted)}
+.summary .big{font-size:22px;line-height:1.5;color:var(--ink)}
 
-/* skills */
-.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.skill{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:22px}
-.skill h3{font-size:18px;margin-bottom:14px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
-.chips li{font-size:14px;padding:5px 11px;border-radius:999px;background:var(--teal-soft);color:var(--ink)}
+/* expertise */
+.expertise{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.exp{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:24px}
+.exp h3{font-size:19px;margin-bottom:8px}
+.exp p{margin:0;color:var(--muted);font-size:15px}
 
-/* services */
-.services{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
-.service{padding:28px 28px 28px 0;border-bottom:1px solid var(--line)}
-.service:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
-.service h3{font-size:22px;margin-bottom:8px}
-.service p{margin:0;color:var(--muted)}
+/* gulf */
+.gulf{background:var(--ink);color:var(--paper);border-radius:28px;padding:56px}
+.gulf .sec-head p{color:color-mix(in srgb,var(--paper) 70%,transparent)}
+.gulf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.gulf-grid div{border-top:2px solid var(--teal);padding-top:18px}
+.gulf-grid .where{font-size:14px;color:var(--teal);font-weight:600}
+.gulf-grid h3{font-size:22px;margin:4px 0 10px}
+.gulf-grid p{margin:0;color:color-mix(in srgb,var(--paper) 72%,transparent);font-size:15px}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline>li{position:relative;padding:0 0 36px 28px}
+.timeline>li::before{content:"";position:absolute;left:-8px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:3px solid var(--teal)}
+.timeline>li.now::before{background:var(--teal)}
+.timeline .when{font-size:14px;color:var(--muted);font-weight:500}
+.timeline h3{font-size:23px;margin:4px 0 2px}
+.timeline .org{color:var(--muted);margin-bottom:10px}
+.timeline ul{margin:0;padding-left:20px;color:var(--muted);font-size:15.5px}
+.timeline ul li{margin-bottom:6px}
+.timeline .award{display:inline-block;background:var(--amber-soft);border-radius:999px;padding:3px 12px;font-size:14px;font-weight:600;margin-top:6px}
+.early{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px}
+.early div{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;font-size:14.5px}
+.early b{display:block;font-size:15.5px}
+.early span{color:var(--muted)}
 
 /* projects */
 .filters{display:flex;gap:8px;flex-wrap:wrap}
-.filters button{font:500 14px "Public Sans",sans-serif;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.filters button{font:500 14px "Public Sans",sans-serif;padding:8px 15px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.project{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px;display:flex;flex-direction:column}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
 .project[hidden]{display:none}
-.project .client{font-size:14px;color:var(--muted);margin-bottom:6px}
-.project h3{font-size:21px;margin-bottom:10px}
-.project p{margin:0 0 16px;color:var(--muted);font-size:15px;flex:1}
-.project .meta{display:flex;flex-wrap:wrap;gap:6px;font-size:13px}
-.project .meta span{border:1px solid var(--line);border-radius:999px;padding:3px 10px}
-.project .meta .plat{border-color:var(--teal);color:var(--teal);font-weight:600}
-details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;font-size:15px}
-summary{cursor:pointer;font-weight:600;color:var(--teal)}
-details p{margin:10px 0 0}
+.project .client{font:700 18px "Bricolage Grotesque",sans-serif;margin-bottom:4px}
+.project .ind{font-size:13px;font-weight:600;color:var(--teal);margin-bottom:8px}
+.project p{margin:0;color:var(--muted);font-size:15px}
+.count{color:var(--muted);font-size:14px;margin-top:16px}
 
-/* timeline */
-.timeline-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-.timeline-grid h3.col{font-size:22px;margin-bottom:20px}
-.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
-.timeline li{position:relative;padding:0 0 28px 24px}
-.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--teal)}
-.timeline .when{font-size:14px;color:var(--muted)}
-.timeline h4{margin:4px 0 2px;font:700 18px "Bricolage Grotesque",sans-serif}
-.timeline p{margin:0;color:var(--muted);font-size:15px}
+/* stack */
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
+.stack>div{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:20px 24px 20px 0;border-bottom:1px solid var(--line)}
+.stack>div:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
+.stack h3{font-size:17px;padding-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;list-style:none;margin:0;padding:0}
+.chips li{font-size:14px;padding:4px 11px;border-radius:999px;background:var(--teal-soft)}
+
+/* education */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.edu-grid h3.col{font-size:22px;margin-bottom:18px}
+.list{list-style:none;margin:0;padding:0}
+.list li{padding:14px 0;border-bottom:1px solid var(--line)}
+.list li:first-child{border-top:1px solid var(--line)}
+.list b{display:block;font-weight:600}
+.list span{color:var(--muted);font-size:15px}
 
 /* contact */
-.contact{background:var(--ink);color:var(--paper);border-radius:28px;padding:64px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px}
-.contact h2{font-size:clamp(32px,5vw,56px);letter-spacing:-.02em}
-.contact p{color:color-mix(in srgb,var(--paper) 70%,transparent)}
-.contact ul{list-style:none;margin:0;padding:0;display:grid;gap:14px;align-content:center}
-.contact li a{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--paper) 20%,transparent);text-decoration:none;font-weight:500}
-.contact li a:hover{color:var(--teal)}
-.contact li small{color:color-mix(in srgb,var(--paper) 60%,transparent)}
-footer{padding:40px 0;color:var(--muted);font-size:14px;text-align:center}
+.contact{background:var(--teal);color:#fff;border-radius:28px;padding:64px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;margin-bottom:24px}
+.contact h2{font-size:clamp(32px,5vw,54px);letter-spacing:-.02em}
+.contact p{color:rgba(255,255,255,.82);font-size:18px}
+.contact .btn{background:#fff;color:#0B4F4C;margin-top:8px}
+.contact ul{list-style:none;margin:0;padding:0;align-self:center}
+.contact li a{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.25);text-decoration:none;font-weight:500}
+.contact li a:hover{text-decoration:underline}
+.contact li small{color:rgba(255,255,255,.7)}
+footer{padding:36px 0 44px;color:var(--muted);font-size:14px;text-align:center}
 
 /* responsive */
-@media (max-width:960px){
-  .skills{grid-template-columns:repeat(2,1fr)}
-  .projects{grid-template-columns:repeat(2,1fr)}
+@media (max-width:980px){
+  .expertise,.projects,.gulf-grid{grid-template-columns:repeat(2,1fr)}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .facts div:nth-child(3){border-left:0;padding-left:0}
+  .facts div:nth-child(n+3){border-top:1px solid var(--line)}
+  .stack{grid-template-columns:1fr}
+  .stack>div,.stack>div:nth-child(even){padding:20px 0;border-left:0}
 }
 @media (max-width:760px){
   .menu-btn{display:block}
   .links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 24px}
   .links.open{display:flex}
   .links a{display:block;padding:12px 0}
-  .hero,.about,.timeline-grid,.contact{grid-template-columns:1fr}
-  .hero{padding-top:48px}
+  .hero,.summary,.edu-grid,.contact{grid-template-columns:1fr}
+  .hero{padding-top:40px}
+  .portrait{order:-1}
   .portrait .tag{left:12px}
-  .facts{grid-template-columns:1fr}
-  .facts div+div{border-left:0;padding-left:0;border-top:1px solid var(--line)}
-  .services{grid-template-columns:1fr}
-  .service,.service:nth-child(even){padding:24px 0;border-left:0}
-  .skills,.projects{grid-template-columns:1fr}
-  .contact{padding:36px 24px}
-  section{padding:64px 0}
+  .expertise,.projects,.gulf-grid,.early{grid-template-columns:1fr}
+  .stack>div{grid-template-columns:1fr;gap:10px}
+  .gulf,.contact{padding:36px 22px}
+  section{padding-top:64px}
 }
 </style>
 </head>
@@ -153,10 +180,11 @@ footer{padding:40px 0;color:var(--muted);font-size:14px;text-align:center}
     <a class="brand" href="#top">Nawaidur<span>.</span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
     <ul class="links" id="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#work">Projects</a></li>
+      <li><a href="#summary">Summary</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#stack">Tech stack</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -166,190 +194,222 @@ footer{padding:40px 0;color:var(--muted);font-size:14px;text-align:center}
   <div class="wrap">
     <div class="hero">
       <div>
-        <div class="status"><i></i>Available for new projects</div>
+        <div class="status"><i></i>Available immediately and open to relocate</div>
         <h1>Nawaidur Rahman</h1>
-        <p class="lead">SharePoint and Microsoft 365 developer. I build intranets, document management systems and approval workflows that teams actually use, on SharePoint Online and on-premises.</p>
+        <div class="role">Senior SharePoint Developer &amp; Project Lead</div>
+        <p class="lead">I design and deliver SharePoint Online, Microsoft 365 and Power Platform solutions for enterprises: intranets, document management systems, knowledge portals and approval apps, from the first workshop to go-live.</p>
         <div class="cta">
           <a class="btn primary" href="#contact">Get in touch</a>
-          <a class="btn ghost" href="https://drive.google.com/file/d/1cqhV9WTyEJ9Lf6JUSDpu9RG3G8SdTaqJ/view" target="_blank" rel="noopener">Download résumé</a>
+          <a class="btn ghost" href="Nawaidur_Rahman_Resume.pdf" target="_blank" rel="noopener">Download résumé (PDF)</a>
         </div>
       </div>
       <div class="portrait">
-        <img src="nawaid.png" alt="Portrait of Nawaidur Rahman">
-        <div class="tag"><b>8+ years</b>building on SharePoint</div>
+        <img src="nawaidur.jpg" alt="Nawaidur Rahman" width="800" height="800">
+        <div class="tag"><b>Bengaluru, India</b>Clients in India, UAE &amp; Kuwait</div>
       </div>
     </div>
 
     <div class="facts">
-      <div><b>8+</b><span>Years in IT, since 2018</span></div>
-      <div><b>30+</b><span>Projects delivered</span></div>
-      <div><b>15+</b><span>Clients across India, Qatar &amp; South Africa</span></div>
+      <div><b>8+</b><span>Years in SharePoint &amp; M365</span></div>
+      <div><b>30+</b><span>Client engagements delivered</span></div>
+      <div><b>4–5</b><span>Developers led as Project Lead</span></div>
+      <div><b>2×</b><span>Employee of the Month</span></div>
     </div>
   </div>
 
-  <section id="about">
+  <section id="summary">
     <div class="wrap">
-      <div class="sec-head"><h2>About</h2></div>
-      <div class="about">
+      <div class="sec-head"><h2>Professional summary</h2></div>
+      <div class="summary">
         <div>
-          <p>I turn messy business processes into clean, secure SharePoint solutions: portals people open every morning, document libraries with real approval chains, and automations that remove the manual follow-up.</p>
+          <p class="big">Eight years of turning business processes into SharePoint solutions people use every day, for manufacturing, banking, healthcare and consumer-goods companies.</p>
         </div>
         <div>
-          <p>I've worked on both SharePoint Online and on-premises (2013 and 2016), for clients ranging from manufacturing and mining to diagnostics and aviation. My day-to-day stack is SPFx with React, REST APIs, and the Power Platform.</p>
-          <p>I like understanding the business goal first, then working closely with other developers and stakeholders to deliver on time and within budget.</p>
+          <p>As Project Lead I owned delivery end to end: requirements, solution architecture, effort estimation, UAT, go-live and support, while leading a team of 4–5 developers through task allocation and code reviews.</p>
+          <p>I've been the main client contact on several engagements at once, including UAE, Kuwait and Indian accounts. I also brought AI-assisted development with GitHub Copilot and Claude Code into my team's workflow to ship faster.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills">
+  <section id="expertise">
     <div class="wrap">
-      <div class="sec-head"><h2>Skills</h2><p>The tools I reach for most, grouped by where they fit in a project.</p></div>
-      <div class="skills">
-        <div class="skill">
-          <h3>SharePoint &amp; M365</h3>
-          <ul class="chips"><li>SharePoint Online</li><li>SharePoint 2013 / 2016</li><li>SPFx</li><li>REST API</li><li>SharePoint Designer workflows</li></ul>
-        </div>
-        <div class="skill">
-          <h3>Power Platform</h3>
-          <ul class="chips"><li>Power Automate</li><li>Power Apps</li><li>Power BI</li></ul>
-        </div>
-        <div class="skill">
-          <h3>Front end</h3>
-          <ul class="chips"><li>React</li><li>JavaScript</li><li>jQuery</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li></ul>
-        </div>
-        <div class="skill">
-          <h3>Back end &amp; cloud</h3>
-          <ul class="chips"><li>C#</li><li>.NET</li><li>ASP.NET</li><li>Azure</li><li>Adobe Sign integration</li></ul>
-        </div>
+      <div class="sec-head"><h2>What I build</h2><p>The kinds of solutions I've delivered most often.</p></div>
+      <div class="expertise">
+        <div class="exp"><h3>Enterprise intranets</h3><p>Modern employee portals with news, events, announcements, global search, directories, birthdays, work anniversaries, galleries and role-based content.</p></div>
+        <div class="exp"><h3>Document management</h3><p>Metadata-driven libraries with information architecture, permissions, approval workflows, versioning, lifecycle rules and external-user collaboration.</p></div>
+        <div class="exp"><h3>Knowledge &amp; content portals</h3><p>Central portals with structured publishing, search, workflow-driven administration and role-based access.</p></div>
+        <div class="exp"><h3>Custom business apps</h3><p>SPFx solutions, dashboards, dynamic forms, approval apps and trackers using SharePoint lists, Microsoft Graph, PnPjs and Power Automate.</p></div>
+        <div class="exp"><h3>Power Apps Code Apps</h3><p>An IT Service Desk proof of concept in React and TypeScript with Microsoft 365 sign-in, ticketing, comments and a knowledge base.</p></div>
+        <div class="exp"><h3>Power Pages sites</h3><p>A responsive public corporate website connected to Dataverse, with enquiry forms.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="services" style="padding-top:0">
+  <section id="experience">
     <div class="wrap">
-      <div class="sec-head"><h2>What I can build for you</h2></div>
-      <div class="services">
-        <div class="service"><h3>Intranet portals</h3><p>Branded company portals with news, events, galleries, birthdays and awards, and an employee directory synced from Active Directory.</p></div>
-        <div class="service"><h3>Document management</h3><p>Secure, centralised document repositories with multi-level approvals, encryption and e-signatures.</p></div>
-        <div class="service"><h3>Workflow &amp; approvals</h3><p>Request and approval apps such as NFAs, HR processes and safety audits, routed by location or role.</p></div>
-        <div class="service"><h3>Power Platform automation</h3><p>Power Automate flows, Power Apps forms and Power BI reports that remove manual work around SharePoint.</p></div>
+      <div class="sec-head"><h2>Career journey</h2><p>All at Enaviya Information Technologies, Bengaluru, growing from trainee to Project Lead.</p></div>
+      <ol class="timeline">
+        <li class="now">
+          <div class="when">Jul 2025 – Sep 2026</div>
+          <h3>Project Leader &amp; Senior SharePoint Developer</h3>
+          <div class="org">Enaviya Information Technologies Pvt. Ltd.</div>
+          <ul>
+            <li>Led end-to-end delivery of SharePoint Online and Power Platform projects, from scoping and architecture to UAT and production go-live.</li>
+            <li>Managed 4–5 developers across parallel projects: task allocation, code reviews, estimation and UAT coordination.</li>
+            <li>Main client contact for concurrent UAE, Gulf and Indian engagements.</li>
+            <li>Introduced GitHub Copilot and Claude Code into team workflows to speed up development.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">Aug 2022 – Jul 2025</div>
+          <h3>Senior SharePoint Developer</h3>
+          <div class="org">Enaviya Information Technologies Pvt. Ltd.</div>
+          <ul>
+            <li>Delivered SharePoint Online, Microsoft 365 and Power Platform solutions from requirements and design through deployment and support.</li>
+            <li>Ran requirement workshops, feasibility analysis, solution walkthroughs, UAT and sign-off as the primary technical contact.</li>
+            <li>Built intranets, DMS and knowledge portals, plus Power Apps, Power Pages and Power Automate business apps.</li>
+            <li>Mentored developers through code reviews and technical guidance.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">Aug 2018 – Jul 2022</div>
+          <h3>Software Engineer</h3>
+          <div class="org">Enaviya Information Technologies Pvt. Ltd.</div>
+          <ul>
+            <li>Built dashboards, dynamic forms, approval apps and trackers on SharePoint lists and libraries.</li>
+            <li>Worked with REST API, JSOM, CSOM, CAML and jQuery on SharePoint Online and on-premises.</li>
+            <li>Automated site provisioning and permissions with PnP PowerShell.</li>
+          </ul>
+          <span class="award">Employee of the Month, July 2020 &amp; July 2021</span>
+        </li>
+        <li>
+          <div class="when">2016 – 2018</div>
+          <h3>Training &amp; internships</h3>
+          <div class="early">
+            <div><b>Enaviya IT</b><span>Trainee, May – Jul 2018</span></div>
+            <div><b>Web Tech Labs, Kolkata</b><span>Academic training, 2016</span></div>
+            <div><b>Cognizant, Kolkata</b><span>Internship, 2016</span></div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="gulf">
+    <div class="wrap">
+      <div class="gulf">
+        <div class="sec-head"><h2>Gulf &amp; UAE client experience</h2><p>Direct delivery for some of the region's largest groups and banks.</p></div>
+        <div class="gulf-grid">
+          <div><div class="where">UAE</div><h3>Al-Futtaim</h3><p>Enterprise intranet portal and knowledge management system for one of the UAE's largest conglomerates.</p></div>
+          <div><div class="where">Kuwait</div><h3>Ahli United Bank</h3><p>An Anti-Money Laundering (AML) application, plus ongoing SharePoint and Microsoft 365 support.</p></div>
+          <div><div class="where">UAE</div><h3>Dubai Investments</h3><p>SPFx (React, TypeScript) enhancements to the ClickDI portal on SharePoint Online, via TechSource.</p></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="work" style="padding-top:0">
+  <section id="clients">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Selected projects</h2>
-        <div class="filters" role="group" aria-label="Filter projects">
+        <h2>Key clients &amp; projects</h2>
+        <div class="filters" role="group" aria-label="Filter by industry">
           <button aria-pressed="true" data-f="all">All</button>
-          <button aria-pressed="false" data-f="online">SharePoint Online</button>
-          <button aria-pressed="false" data-f="onprem">On-premises</button>
+          <button aria-pressed="false" data-f="mfg">Manufacturing</button>
+          <button aria-pressed="false" data-f="health">Healthcare &amp; pharma</button>
+          <button aria-pressed="false" data-f="consumer">Consumer goods</button>
+          <button aria-pressed="false" data-f="other">Other</button>
         </div>
       </div>
       <div class="projects">
-        <article class="project" data-p="online">
-          <div class="client">BUSCH Vacuum Pumps and Systems</div>
-          <h3>Secure document repository</h3>
-          <p>A central document store for 12 international sites, with files encrypted so they can't be viewed, copied or edited outside BUSCH's environment.</p>
-          <div class="meta"><span class="plat">SharePoint Online</span><span>SPFx</span><span>Power Automate</span></div>
-        </article>
-        <article class="project" data-p="online">
-          <div class="client">Birla Corporation Ltd, Mumbai</div>
-          <h3>Intranet portal &amp; safety apps</h3>
-          <p>An employee intranet plus five safety modules: observations, incidents, audits, meetings and training.</p>
-          <div class="meta"><span class="plat">SharePoint Online</span><span>jQuery</span><span>REST API</span><span>Schedulers</span></div>
-        </article>
-        <article class="project" data-p="online">
-          <div class="client">Ashirvad Pipes, Bengaluru</div>
-          <h3>DMS with e-signature</h3>
-          <p>Document approvals across three levels, finishing with an Adobe Sign e-signature from the relevant users.</p>
-          <div class="meta"><span class="plat">SharePoint Online</span><span>Workflows</span><span>Adobe Sign</span></div>
-        </article>
-        <article class="project" data-p="online">
-          <div class="client">Manav Energy Pvt Ltd</div>
-          <h3>Inventory management system</h3>
-          <p>Tracks every product, asset and consumable the company handles, in one place.</p>
-          <div class="meta"><span class="plat">SharePoint Online</span><span>jQuery</span><span>REST API</span></div>
-        </article>
-        <article class="project" data-p="online">
-          <div class="client">SRL Diagnostics</div>
-          <h3>SRL intranet portal</h3>
-          <p>A collaboration hub with news, events, galleries, birthdays and awards, and links to other company apps.</p>
-          <div class="meta"><span class="plat">SharePoint Online</span><span>JavaScript</span></div>
-        </article>
-        <article class="project" data-p="onprem">
-          <div class="client">Zinc International, South Africa</div>
-          <h3>Need For Approval (NFA)</h3>
-          <p>Location-based requests that move through multi-level approvals chosen by the user.</p>
-          <div class="meta"><span class="plat">SharePoint 2016</span><span>C#</span><span>Workflows</span></div>
-        </article>
-        <article class="project" data-p="onprem">
-          <div class="client">Hindustan Zinc Ltd</div>
-          <h3>HZL ZING portal</h3>
-          <p>A company-wide intranet with news, events, galleries and quick links to internal applications.</p>
-          <div class="meta"><span class="plat">SharePoint 2016</span><span>jQuery</span><span>REST API</span></div>
-        </article>
-        <article class="project" data-p="onprem">
-          <div class="client">Qatar Civil Aviation Authority</div>
-          <h3>QCAA portal</h3>
-          <p>Development and support for the portal of Qatar's government body for civil aviation affairs.</p>
-          <div class="meta"><span class="plat">SharePoint 2013</span><span>JavaScript</span><span>REST API</span></div>
-        </article>
-        <article class="project" data-p="onprem">
-          <div class="client">Puravankara Ltd</div>
-          <h3>Equipe intranet</h3>
-          <p>An intranet with an AD-synced employee directory, HR workflows and a custom Bootstrap master page.</p>
-          <div class="meta"><span class="plat">SharePoint 2013</span><span>C#</span><span>Bootstrap</span></div>
-        </article>
+        <article class="project" data-p="consumer"><div class="client">Godrej Consumer Products</div><div class="ind">Consumer goods</div><p>Godrej DMS solutions for MData and MShowcase, with document management and process features.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Triveni Turbines</div><div class="ind">Manufacturing</div><p>OPEX/CAPEX expense tracker with dynamic approval workflows, plus an intranet portal.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Dorf Ketal</div><div class="ind">Manufacturing</div><p>Plant Management of Change (MOC) app with custom forms and approval processes.</p></article>
+        <article class="project" data-p="mfg"><div class="client">NOCIL Limited</div><div class="ind">Manufacturing</div><p>MOC, Expenditure Approval System and a DMS that supports external users.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Birla Corp</div><div class="ind">Manufacturing</div><p>OHS Connect for observations, incident management, EHS processes and minutes of meeting.</p></article>
+        <article class="project" data-p="health"><div class="client">Manipal Hospitals</div><div class="ind">Healthcare</div><p>Custom DMS and intranet portal with tailored SharePoint workflows.</p></article>
+        <article class="project" data-p="consumer"><div class="client">Perfetti Van Melle</div><div class="ind">Consumer goods, Netherlands</div><p>Application support for the global New Product Launch process, integrated with the 4me tool.</p></article>
+        <article class="project" data-p="mfg"><div class="client">FIAT / TATA Motors</div><div class="ind">Automotive</div><p>Application support, dashboards, DWMS and custom SharePoint business solutions.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Hindustan Zinc</div><div class="ind">Mining &amp; metals</div><p>Intranet portal and Note for Approval (NFA) forms with custom workflows.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Aliaxis / Ashirvad Pipes</div><div class="ind">Manufacturing</div><p>R&amp;T portal covering CAPE, knowledge, lab management and timesheet apps.</p></article>
+        <article class="project" data-p="mfg"><div class="client">PCBL</div><div class="ind">Manufacturing</div><p>Intranet with visitor management, onboarding, insurance and meeting-room booking.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Manav Energy</div><div class="ind">Energy</div><p>CRM and inventory management system, with ongoing enhancements and support.</p></article>
+        <article class="project" data-p="health"><div class="client">SRL Diagnostics</div><div class="ind">Healthcare</div><p>Enterprise intranet portal and a minutes-of-meeting app with custom workflows.</p></article>
+        <article class="project" data-p="health"><div class="client">Strides Arcolab</div><div class="ind">Pharma</div><p>IT compliance tracker for managing activities, tracking and approvals.</p></article>
+        <article class="project" data-p="health"><div class="client">Stelis Biopharma</div><div class="ind">Pharma</div><p>Enterprise intranet portal with custom SharePoint components.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Arjas Steel</div><div class="ind">Steel</div><p>Document management system customised for business process management.</p></article>
+        <article class="project" data-p="consumer"><div class="client">VVF</div><div class="ind">Consumer goods</div><p>Enterprise intranet portal with custom features and business applications.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Jesons</div><div class="ind">Manufacturing</div><p>Migration and automated DMS provisioning of subsites, libraries and folders with PnPjs.</p></article>
+        <article class="project" data-p="mfg"><div class="client">Raj Petro / TechSource</div><div class="ind">Petrochemicals</div><p>RAJ Dynamic Smart Forms, a configurable dynamic-form solution with custom approvals.</p></article>
+        <article class="project" data-p="other"><div class="client">Mobile Creches</div><div class="ind">Non-profit</div><p>MC Hub intranet with minutes of meeting, surveys, ideas and a Tweet Corner.</p></article>
+        <article class="project" data-p="other"><div class="client">SIS</div><div class="ind">Services</div><p>Purchase request approval solution with custom forms and process automation.</p></article>
+        <article class="project" data-p="other"><div class="client">SeedWorks</div><div class="ind">Agriculture</div><p>DMS approval processes and business forms on SharePoint.</p></article>
+        <article class="project" data-p="other"><div class="client">ISWAI</div><div class="ind">Industry association</div><p>Custom DMS with document workflows and business process features.</p></article>
+        <article class="project" data-p="other"><div class="client">Rhythm Innovations</div><div class="ind">Technology</div><p>RhythmPortal, a SharePoint-based business application.</p></article>
+      </div>
+      <div class="count" id="count" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="wrap">
+      <div class="sec-head"><h2>Technologies &amp; tools</h2></div>
+      <div class="stack">
+        <div><h3>SharePoint</h3><ul class="chips"><li>SharePoint Online</li><li>Modern sites</li><li>Information architecture</li><li>Content types &amp; metadata</li><li>Search</li><li>Permissions</li><li>SharePoint 2013 / 2016 / 2019</li></ul></div>
+        <div><h3>Development</h3><ul class="chips"><li>SPFx</li><li>React</li><li>TypeScript</li><li>JavaScript</li><li>HTML5 &amp; CSS</li><li>jQuery</li><li>Bootstrap</li></ul></div>
+        <div><h3>APIs &amp; integration</h3><ul class="chips"><li>Microsoft Graph</li><li>SharePoint REST</li><li>PnPjs</li><li>CSOM / JSOM</li><li>CAML</li><li>ASP.NET Web API</li><li>SQL Server</li></ul></div>
+        <div><h3>Power Platform</h3><ul class="chips"><li>Power Apps (Canvas &amp; Code Apps)</li><li>Power Automate</li><li>Power Pages</li><li>Dataverse</li><li>Power BI</li></ul></div>
+        <div><h3>Administration</h3><ul class="chips"><li>PnP PowerShell</li><li>SPO Management Shell</li><li>Site provisioning</li><li>Deployment</li></ul></div>
+        <div><h3>Delivery &amp; AI</h3><ul class="chips"><li>Solution architecture</li><li>Effort estimation</li><li>Agile</li><li>UAT</li><li>GitHub Copilot</li><li>Claude Code</li><li>Prompt engineering</li></ul></div>
       </div>
     </div>
   </section>
 
-  <section id="experience" style="padding-top:0">
+  <section id="education">
     <div class="wrap">
-      <div class="sec-head"><h2>Experience &amp; education</h2></div>
-      <div class="timeline-grid">
-        <div>
-          <h3 class="col">Work</h3>
-          <ol class="timeline">
-            <li><div class="when">Aug 2018 – Present</div><h4>Software Engineer</h4><p>Enaviya Information Technology</p></li>
-            <li><div class="when">May 2018 – Jul 2018</div><h4>Software Trainee (Apprenticeship)</h4><p>Enaviya Information Technology</p></li>
-          </ol>
-        </div>
+      <div class="sec-head"><h2>Education &amp; recognition</h2></div>
+      <div class="edu-grid">
         <div>
           <h3 class="col">Education</h3>
-          <ol class="timeline">
-            <li><div class="when">2013 – 2017</div><h4>B.Tech, Information Technology</h4><p>Haldia Institute of Technology (MAKAUT), West Bengal · CGPA 7.73</p></li>
-            <li><div class="when">2011 – 2013</div><h4>Class XII, PCM (CBSE)</h4><p>International School, Patna · 70%</p></li>
-            <li><div class="when">2001 – 2011</div><h4>Class X (ICSE)</h4><p>St. Xavier's High School, Patna · 75.4%</p></li>
-          </ol>
+          <ul class="list">
+            <li><b>B.Tech, Information Technology, 2017</b><span>Haldia Institute of Technology (MAKAUT), West Bengal. CGPA 7.73</span></li>
+            <li><b>Class XII, Science &amp; Mathematics (CBSE), 2013</b><span>International School, Patna. 70%</span></li>
+            <li><b>Class X (ICSE), 2011</b><span>St. Xavier's High School, Patna. 75.4%</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="col">Certifications &amp; achievements</h3>
+          <ul class="list">
+            <li><b>One Million Prompters, 2026</b><span>Prompt Engineering &amp; Applied AI, Dubai Future Foundation / Dubai Centre for AI</span></li>
+            <li><b>Employee of the Month</b><span>July 2020 and July 2021, Enaviya Information Technologies</span></li>
+            <li><b>Putting Data Protection Into Practice</b><span>Training, Perfetti Van Melle, November 2023</span></li>
+            <li><b>Table tennis</b><span>Represented at state, zonal, national and university levels</span></li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" style="padding-top:0">
+  <section id="contact">
     <div class="wrap">
       <div class="contact">
         <div>
-          <h2>Have a SharePoint project in mind?</h2>
-          <p>Tell me what you're trying to fix or build. I usually reply within a day.</p>
-          <a class="btn primary" href="mailto:nawaid3929@gmail.com" style="margin-top:12px">Email me</a>
+          <h2>Let's connect</h2>
+          <p>Looking for a Senior SharePoint, Microsoft 365 or Power Platform developer? I can join immediately and I'm open to relocating.</p>
+          <a class="btn" href="mailto:nawaid3929@gmail.com">Email me</a>
         </div>
         <ul>
           <li><a href="mailto:nawaid3929@gmail.com">nawaid3929@gmail.com <small>Email</small></a></li>
           <li><a href="tel:+917631850198">+91 76318 50198 <small>Phone</small></a></li>
           <li><a href="https://api.whatsapp.com/send?phone=917631850198" target="_blank" rel="noopener">WhatsApp <small>Chat</small></a></li>
-          <li><a href="https://www.linkedin.com/in/nawaidur-rahman-20a852113" target="_blank" rel="noopener">LinkedIn <small>Profile</small></a></li>
+          <li><a href="https://www.linkedin.com/in/nawaidur-rahman" target="_blank" rel="noopener">LinkedIn <small>Profile</small></a></li>
         </ul>
       </div>
     </div>
   </section>
 </main>
 
-<footer>© <span id="yr">2026</span> Nawaidur Rahman · Patna, India</footer>
+<footer>© <span id="yr">2026</span> Nawaidur Rahman. English, Hindi, Urdu.</footer>
 
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
@@ -361,11 +421,17 @@ btn.addEventListener('click', () => {
 links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   links.classList.remove('open'); btn.setAttribute('aria-expanded', false);
 }));
+const cards = document.querySelectorAll('.project'), count = document.getElementById('count');
+const show = f => {
+  let n = 0;
+  cards.forEach(p => { const on = f === 'all' || p.dataset.p === f; p.hidden = !on; if (on) n++; });
+  count.textContent = `Showing ${n} of ${cards.length} clients. Plus the Gulf clients above.`;
+};
 document.querySelectorAll('.filters button').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
-  const f = b.dataset.f;
-  document.querySelectorAll('.project').forEach(p => p.hidden = !(f === 'all' || p.dataset.p === f));
+  show(b.dataset.f);
 }));
+show('all');
 </script>
 </body>
 </html>
