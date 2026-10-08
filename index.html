@@ -58,7 +58,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:64px;ga
 
 /* hero */
 .hero-band{background:radial-gradient(1100px 500px at 85% -10%,var(--navy-2),transparent 70%),var(--navy);color:var(--on-dark);padding:72px 0 120px}
-.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:start}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center}
 .status{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,.18);padding:7px 14px;border-radius:999px;margin-bottom:26px}
 .status i{width:9px;height:9px;border-radius:50%;background:#3DDC97;box-shadow:0 0 0 4px rgba(61,220,151,.22)}
 .hero h1{font-size:clamp(42px,6.4vw,76px);font-weight:800;letter-spacing:-.03em;color:#fff}
@@ -186,7 +186,8 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
 footer .social{display:flex;justify-content:center;gap:12px;margin-bottom:14px}
 footer .social a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center}
 footer .social a:hover{border-color:var(--gold);color:var(--gold)}
-.badges{display:flex;flex-wrap:wrap;gap:8px;padding:16px 0 4px}
+.badges{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.snap dl{margin-top:6px}
 .bdg{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;padding:6px 12px;border-radius:999px}
 .bdg svg{width:15px;height:15px;stroke-width:2.6}
 .bdg.gold{background:var(--gold-soft);color:var(--ink)}
@@ -249,7 +250,7 @@ footer .social a:hover{border-color:var(--gold);color:var(--gold)}
 
 <header>
   <nav class="wrap" aria-label="Main">
-    <a class="brand" href="#top"><span class="mono">NR</span>Nawaidur Rahman</a>
+    <a class="brand" href="#top" aria-label="Back to top"><span class="mono">NR</span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
     <ul class="links" id="nav-links">
       <li><a href="#gulf">International projects</a></li>
@@ -266,10 +267,9 @@ footer .social a:hover{border-color:var(--gold);color:var(--gold)}
   <div class="hero-band">
     <div class="wrap hero">
       <div>
-        <div class="status"><i></i>Immediately available to join, open to relocate</div>
         <h1>Nawaidur Rahman</h1>
         <div class="role">Senior SharePoint Developer – Project Lead</div>
-        <p class="lead">8+ years designing and delivering SharePoint Online, Microsoft 365 and Power Platform solutions for enterprises in India, the UAE, Kuwait and the Netherlands, from the first requirements workshop to go-live.</p>
+        <p class="lead">I design and deliver SharePoint Online, Microsoft 365 and Power Platform solutions for enterprises in India, the UAE, Kuwait and the Netherlands, from the first requirements workshop to go-live.</p>
         <div class="cta">
           <a class="btn gold" href="Nawaidur_Rahman_Resume.pdf" target="_blank" rel="noopener"><svg class="i"><use href="#i-dl"/></svg>Download CV</a>
           <a class="btn wa" href="https://api.whatsapp.com/send?phone=917631850198" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</a>
@@ -281,16 +281,13 @@ footer .social a:hover{border-color:var(--gold);color:var(--gold)}
       <aside class="snap" aria-label="Profile summary">
         <div class="snap-head">
           <img src="nawaidur.jpg" alt="Nawaidur Rahman" width="84" height="84">
-          <div><b>Nawaidur Rahman</b><span>SharePoint, Microsoft 365 &amp; Power Platform</span></div>
-        </div>
-        <div class="badges">
-          <span class="bdg gold"><svg class="i"><use href="#i-check"/></svg>UAE MOFA attestation done</span>
-          <span class="bdg green"><svg class="i"><use href="#i-check"/></svg>Immediately available to join</span>
+          <div class="badges">
+            <span class="bdg green"><svg class="i"><use href="#i-check"/></svg>Immediately available to join</span>
+            <span class="bdg gold"><svg class="i"><use href="#i-check"/></svg>UAE MOFA attestation done</span>
+          </div>
         </div>
         <dl>
           <dt>Target roles</dt><dd>Senior SharePoint, M365 &amp; Power Platform Developer</dd>
-          <dt>Experience</dt><dd>8+ years</dd>
-          <dt>Latest role</dt><dd>Senior SharePoint Developer – Project Lead</dd>
           <dt>Relocation</dt><dd class="ok">Open to relocate</dd>
           <dt>Based in</dt><dd>Bengaluru, India</dd>
           <dt>Nationality</dt><dd>Indian</dd>
