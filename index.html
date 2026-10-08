@@ -180,6 +180,16 @@ section{padding:88px 0 0}
 .contact li a:hover{color:var(--gold)}
 .contact li small{margin-left:auto;color:var(--on-dark-muted);font-weight:500}
 footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
+footer .social{display:flex;justify-content:center;gap:12px;margin-bottom:14px}
+footer .social a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center}
+footer .social a:hover{border-color:var(--gold);color:var(--gold)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;padding:16px 0 4px}
+.bdg{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;padding:6px 12px;border-radius:999px}
+.bdg svg{width:15px;height:15px;stroke-width:2.6}
+.bdg.gold{background:var(--gold-soft);color:var(--ink)}
+.bdg.gold svg{color:var(--gold)}
+.bdg.green{background:var(--teal-soft);color:var(--ink)}
+.bdg.green svg{color:var(--teal)}
 
 /* floating whatsapp */
 .fab{position:fixed;right:18px;bottom:18px;z-index:30;width:56px;height:56px;border-radius:50%;background:#1FA855;color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(0,0,0,.45)}
@@ -222,6 +232,7 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
   <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></symbol>
   <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
   <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
 </svg>
 
@@ -230,7 +241,7 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
     <a class="brand" href="#top"><span class="mono">NR</span>Nawaidur Rahman</a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
     <ul class="links" id="nav-links">
-      <li><a href="#gulf">Gulf projects</a></li>
+      <li><a href="#gulf">International projects</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#clients">Clients</a></li>
@@ -244,28 +255,31 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
   <div class="hero-band">
     <div class="wrap hero">
       <div>
-        <div class="status"><i></i>Available immediately, open to relocate</div>
+        <div class="status"><i></i>Immediately available to join, open to relocate</div>
         <h1>Nawaidur Rahman</h1>
-        <div class="role">Senior SharePoint Developer &amp; Project Lead</div>
-        <p class="lead">8+ years designing and delivering SharePoint Online, Microsoft 365 and Power Platform solutions for enterprises in India, the UAE and Kuwait, from the first requirements workshop to go-live.</p>
+        <div class="role">Senior SharePoint Developer – Project Lead</div>
+        <p class="lead">8+ years designing and delivering SharePoint Online, Microsoft 365 and Power Platform solutions for enterprises in India, the UAE, Kuwait and the Netherlands, from the first requirements workshop to go-live.</p>
         <div class="cta">
           <a class="btn gold" href="Nawaidur_Rahman_Resume.pdf" target="_blank" rel="noopener"><svg class="i"><use href="#i-dl"/></svg>Download CV</a>
           <a class="btn wa" href="https://api.whatsapp.com/send?phone=917631850198" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</a>
           <a class="btn line" href="mailto:nawaid3929@gmail.com"><svg class="i"><use href="#i-mail"/></svg>Email</a>
         </div>
-        <div class="gulf-tags">Delivered for <span class="t">Al-Futtaim</span><span class="t">Ahli United Bank</span><span class="t">Dubai Investments</span></div>
+        <div class="gulf-tags">Delivered for <span class="t">Al-Futtaim</span><span class="t">Ahli United Bank</span><span class="t">Dubai Investments</span><span class="t">Perfetti Van Melle</span></div>
       </div>
 
-      <aside class="snap" aria-label="Recruiter snapshot">
+      <aside class="snap" aria-label="Profile summary">
         <div class="snap-head">
           <img src="nawaidur.jpg" alt="Nawaidur Rahman" width="84" height="84">
-          <div><b>Recruiter snapshot</b><span>The essentials at a glance</span></div>
+          <div><b>Nawaidur Rahman</b><span>SharePoint, Microsoft 365 &amp; Power Platform</span></div>
+        </div>
+        <div class="badges">
+          <span class="bdg gold"><svg class="i"><use href="#i-check"/></svg>UAE MOFA attestation done</span>
+          <span class="bdg green"><svg class="i"><use href="#i-check"/></svg>Immediately available to join</span>
         </div>
         <dl>
           <dt>Experience</dt><dd>8+ years</dd>
-          <dt>Latest role</dt><dd>Project Lead</dd>
-          <dt>Notice period</dt><dd class="ok">Immediate</dd>
-          <dt>Relocation</dt><dd class="ok">Open, including GCC</dd>
+          <dt>Latest role</dt><dd>Senior SharePoint Developer – Project Lead</dd>
+          <dt>Relocation</dt><dd class="ok">Open to relocate</dd>
           <dt>Based in</dt><dd>Bengaluru, India</dd>
           <dt>Nationality</dt><dd>Indian</dd>
           <dt>Languages</dt><dd>English, Hindi, Urdu</dd>
@@ -278,7 +292,7 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
     <div class="stats">
       <div><b>8<small>+</small></b><span>Years in SharePoint &amp; Microsoft 365</span></div>
       <div><b>30<small>+</small></b><span>Enterprise client engagements</span></div>
-      <div><b>3</b><span>Gulf clients in the UAE &amp; Kuwait</span></div>
+      <div><b>4</b><span>International clients in the UAE, Kuwait &amp; Netherlands</span></div>
       <div><b>4–5</b><span>Developers led as Project Lead</span></div>
     </div>
 
@@ -292,7 +306,7 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
 
   <section id="gulf">
     <div class="wrap">
-      <div class="sec-head"><h2>Gulf &amp; UAE projects</h2><p>Direct delivery for some of the region's largest groups and banks, working with client teams in the UAE and Kuwait.</p></div>
+      <div class="sec-head"><h2>International projects</h2><p>Direct delivery for major groups and banks in the UAE and Kuwait, and global support for a Netherlands-based multinational.</p></div>
       <div class="cases">
 
         <article class="case">
@@ -367,6 +381,31 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
           </div>
         </article>
 
+        <article class="case">
+          <div class="art">
+            <span class="flag">Netherlands</span>
+            <svg viewBox="0 0 280 190" aria-hidden="true">
+              <rect width="280" height="190" rx="12" fill="#fff"/>
+              <rect x="14" y="14" width="140" height="10" rx="5" fill="#16314B"/>
+              <g fill="#EEF2F6"><rect x="14" y="36" width="60" height="140" rx="8"/><rect x="82" y="36" width="60" height="140" rx="8"/><rect x="150" y="36" width="60" height="140" rx="8"/><rect x="218" y="36" width="48" height="140" rx="8"/></g>
+              <g fill="#C2CCD6"><rect x="22" y="44" width="40" height="6" rx="3"/><rect x="90" y="44" width="40" height="6" rx="3"/><rect x="158" y="44" width="40" height="6" rx="3"/><rect x="226" y="44" width="32" height="6" rx="3"/></g>
+              <rect x="20" y="58" width="48" height="30" rx="5" fill="#fff"/><rect x="20" y="94" width="48" height="30" rx="5" fill="#fff"/><rect x="20" y="130" width="48" height="30" rx="5" fill="#fff"/>
+              <rect x="88" y="58" width="48" height="30" rx="5" fill="#F7EEDC"/><rect x="88" y="94" width="48" height="30" rx="5" fill="#fff"/>
+              <rect x="156" y="58" width="48" height="30" rx="5" fill="#E2F1F0"/><rect x="156" y="94" width="48" height="30" rx="5" fill="#E2F1F0"/>
+              <rect x="224" y="58" width="36" height="30" rx="5" fill="#0B7A75"/>
+            </svg>
+          </div>
+          <div class="body">
+            <div class="who">Perfetti Van Melle, Netherlands</div>
+            <h3>Global New Product Launch (NPL) support</h3>
+            <div class="ps">
+              <div><b>The brief</b><p>Keep the SharePoint-based process behind global product launches running smoothly for a multinational confectionery group.</p></div>
+              <div><b>What I delivered</b><p>Application support for the NPL solutions, integrated with the 4me service-management tool, plus data protection training with the client.</p></div>
+            </div>
+            <ul class="tags"><li>SharePoint</li><li>4me integration</li><li>Application support</li><li>Global process</li></ul>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -400,7 +439,7 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
       <ol class="timeline">
         <li class="now">
           <div class="when">Jul 2025 – Sep 2026</div>
-          <h3>Project Leader &amp; Senior SharePoint Developer</h3>
+          <h3>Senior SharePoint Developer – Project Lead</h3>
           <div class="org">Enaviya Information Technologies Pvt. Ltd.</div>
           <ul>
             <li>Led end-to-end delivery of SharePoint Online and Power Platform projects, from scoping and architecture to UAT and go-live.</li>
@@ -460,8 +499,7 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
         <article class="project" data-p="consumer"><div class="client">Godrej Consumer Products</div><div class="ind">Consumer goods</div><p>Godrej DMS solutions for MData and MShowcase, with document management and process features.</p></article>
         <article class="project" data-p="mfg"><div class="client">FIAT / TATA Motors</div><div class="ind">Automotive</div><p>Application support, dashboards, DWMS and custom SharePoint business solutions.</p></article>
         <article class="project" data-p="health"><div class="client">Manipal Hospitals</div><div class="ind">Healthcare</div><p>Custom DMS and intranet portal with tailored SharePoint workflows.</p></article>
-        <article class="project" data-p="consumer"><div class="client">Perfetti Van Melle</div><div class="ind">Consumer goods, Netherlands</div><p>Application support for the global New Product Launch process, integrated with the 4me tool.</p></article>
-        <article class="project" data-p="mfg"><div class="client">Hindustan Zinc</div><div class="ind">Mining &amp; metals</div><p>Intranet portal and Note for Approval (NFA) forms with custom workflows.</p></article>
+                <article class="project" data-p="mfg"><div class="client">Hindustan Zinc</div><div class="ind">Mining &amp; metals</div><p>Intranet portal and Note for Approval (NFA) forms with custom workflows.</p></article>
         <article class="project" data-p="mfg"><div class="client">Triveni Turbines</div><div class="ind">Manufacturing</div><p>OPEX/CAPEX expense tracker with dynamic approval workflows, plus an intranet portal.</p></article>
         <article class="project" data-p="mfg"><div class="client">Dorf Ketal</div><div class="ind">Manufacturing</div><p>Plant Management of Change (MOC) app with custom forms and approval processes.</p></article>
         <article class="project" data-p="mfg"><div class="client">NOCIL Limited</div><div class="ind">Manufacturing</div><p>MOC, Expenditure Approval System and a DMS that supports external users.</p></article>
@@ -547,7 +585,13 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px;text-align:center}
   </section>
 </main>
 
-<footer>© <span id="yr">2026</span> Nawaidur Rahman</footer>
+<footer>
+  <div class="social">
+    <a href="https://www.linkedin.com/in/nawaidur-rahman" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-in"/></svg></a>
+    <a href="mailto:nawaid3929@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail"/></svg></a>
+  </div>
+  © <span id="yr">2026</span> Nawaidur Rahman
+</footer>
 
 <a class="fab" href="https://api.whatsapp.com/send?phone=917631850198" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="i"><use href="#i-wa"/></svg></a>
 
@@ -565,7 +609,7 @@ const cards = document.querySelectorAll('.project'), count = document.getElement
 const show = f => {
   let n = 0;
   cards.forEach(p => { const on = f === 'all' || p.dataset.p === f; p.hidden = !on; if (on) n++; });
-  count.textContent = `Showing ${n} of ${cards.length} clients, in addition to the Gulf projects above.`;
+  count.textContent = `Showing ${n} of ${cards.length} clients, in addition to the international projects above.`;
 };
 document.querySelectorAll('.filters button').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
